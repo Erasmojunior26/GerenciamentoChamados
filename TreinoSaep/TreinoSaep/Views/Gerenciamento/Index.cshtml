@@ -1,0 +1,125 @@
+﻿@model TreinoSaep.Models.Gerenciamento
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center">Gerenciamento de Chamados</h1>
+    <hr />
+    <div class="row">
+        <!-- Coluna Aberto -->
+        <div class="col-md-4">
+            <h4 class="text-center text-primary">Aberto</h4>
+            <div class="card-deck">
+                @foreach (var chamado in Model.Aberto)
+                {
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">@chamado.Descricao</h5>
+                            <p class="card-text"><strong>Setor: </strong> @chamado.Setor</p>
+                            <p class="card-text"><strong>Prioridade: </strong>  @chamado.Prioridade</p>
+                            <p class="card-text"><strong>Autor: </strong> @chamado.Usuario.Nome</p>
+
+                            <form class="form-group" asp-controller="Chamados" asp-action="Editstatus">
+                                <input name="id" asp-for="@chamado.Idchamado" hidden />
+                                <label><strong>Modificar Status</strong></label>
+                                <div class="d-flex align-items-center">
+                                    <select name="status" id="statusSelect" class="form-control mr-2">
+                                        <option value="Aberto">Aberto</option>
+                                        <option value="Em andamento">Em andamento</option>
+                                        <option value="Finalizado">Finalizado</option>
+                                    </select>
+                                    <button type="submit" class="btn btn-outline-info">Filtrar</button>
+                                </div>
+                            </form>
+                            <hr />
+
+
+                            <div class="d-flex justify-content-between">
+                                <a asp-action="Edit" asp-controller="Chamados" asp-route-id="@chamado.Idchamado" class="btn btn-warning">Editar</a>
+                                <a asp-action="Delete" asp-controller="Chamados" asp-route-id="@chamado.Idchamado" class="btn btn-danger">Excluir</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Coluna Em andamento -->
+        <div class="col-md-4">
+            <h4 class="text-center text-warning">Em Andamento</h4>
+            <div class="card-deck">
+                @foreach (var chamado in Model.Em_andamento)
+                {
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">@chamado.Descricao</h5>
+                            <p class="card-text"><strong>Setor: </strong> @chamado.Setor</p>
+                            <p class="card-text"><strong>Prioridade: </strong>  @chamado.Prioridade</p>
+                            <p class="card-text"><strong>Autor: </strong> @chamado.Usuario.Nome</p>
+
+                            <form class="form-group" asp-controller="Chamados" asp-action="Editstatus">
+                                <input name="id" asp-for="@chamado.Idchamado" hidden />
+                                <label>Definir status</label>
+                                <div class="d-flex align-items-center">
+                                    <select name="status" id="statusSelect" class="form-control mr-2">
+                                        <option value="Em andamento">Em andamento</option>
+                                        <option value="Aberto">Aberto</option>
+                                        <option value="Finalizado">Finalizado</option>
+                                    </select>
+                                    <button type="submit" class="btn btn-outline-info">Filtrar</button>
+                                </div>
+                            </form>
+                            <hr />
+
+
+                            <div class="d-flex justify-content-between">
+                                <a asp-action="Edit" asp-controller="Chamados" asp-route-id="@chamado.Idchamado" class="btn btn-warning">Editar</a>
+                                <a asp-action="Delete" asp-controller="Chamados" asp-route-id="@chamado.Idchamado" class="btn btn-danger">Excluir</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Coluna Finalizado -->
+        <div class="col-md-4">
+            <h4 class="text-center text-success">Finalizado</h4>
+            <div class="card-deck">
+                @foreach (var chamado in Model.Finalizado)
+                {
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">@chamado.Descricao</h5>
+                            <p class="card-text"><strong>Setor: </strong> @chamado.Setor</p>
+                            <p class="card-text"><strong>Prioridade: </strong>  @chamado.Prioridade</p>
+                            <p class="card-text"><strong>Autor: </strong> @chamado.Usuario.Nome</p>
+
+                            <form class="form-group" asp-controller="Chamados" asp-action="Editstatus">
+                                <input name="id" asp-for="@chamado.Idchamado" hidden />
+                                <label>Definir status</label>
+                                <div class="d-flex align-items-center">
+                                    <select name="status" id="statusSelect" class="form-control mr-2">
+                                        <option value="Finalizado">Finalizado</option>
+                                        <option value="Aberto">Aberto</option>
+                                        <option value="Em andamento">Em andamento</option>
+                                        
+                                    </select>
+                                    <button type="submit" class="btn btn-outline-info">Filtrar</button>
+                                </div>
+                            </form>
+                            <hr />
+
+                            
+                            <div class="d-flex justify-content-between">
+                                <a asp-action="Edit" asp-controller="Chamados" asp-route-id="@chamado.Idchamado" class="btn btn-warning">Editar</a>
+                                <a asp-action="Delete" asp-controller="Chamados" asp-route-id="@chamado.Idchamado" class="btn btn-danger">Excluir</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
