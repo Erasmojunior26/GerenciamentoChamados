@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TreinoSaep")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c285e9ef559694b22fdb9a66153abc7048b3bca2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a2095ae6eb82442c21c0a5687de065d960dbc31")]
 [assembly: System.Reflection.AssemblyProductAttribute("TreinoSaep")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TreinoSaep")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
