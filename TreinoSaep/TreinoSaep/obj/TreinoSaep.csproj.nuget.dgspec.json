@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Erasmo\\Saep\\TreinoSaep\\TreinoSaep\\TreinoSaep.csproj": {}
+    "C:\\Users\\enojr\\OneDrive\\Documentos\\GerenciamentoChamados\\TreinoSaep\\TreinoSaep\\TreinoSaep.csproj": {}
   },
   "projects": {
-    "E:\\Erasmo\\Saep\\TreinoSaep\\TreinoSaep\\TreinoSaep.csproj": {
+    "C:\\Users\\enojr\\OneDrive\\Documentos\\GerenciamentoChamados\\TreinoSaep\\TreinoSaep\\TreinoSaep.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Erasmo\\Saep\\TreinoSaep\\TreinoSaep\\TreinoSaep.csproj",
+        "projectUniqueName": "C:\\Users\\enojr\\OneDrive\\Documentos\\GerenciamentoChamados\\TreinoSaep\\TreinoSaep\\TreinoSaep.csproj",
         "projectName": "TreinoSaep",
-        "projectPath": "E:\\Erasmo\\Saep\\TreinoSaep\\TreinoSaep\\TreinoSaep.csproj",
-        "packagesPath": "C:\\Users\\tarde.cetafaju\\.nuget\\packages\\",
-        "outputPath": "E:\\Erasmo\\Saep\\TreinoSaep\\TreinoSaep\\obj\\",
+        "projectPath": "C:\\Users\\enojr\\OneDrive\\Documentos\\GerenciamentoChamados\\TreinoSaep\\TreinoSaep\\TreinoSaep.csproj",
+        "packagesPath": "C:\\Users\\enojr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\enojr\\OneDrive\\Documentos\\GerenciamentoChamados\\TreinoSaep\\TreinoSaep\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\tarde.cetafaju\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\enojr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -97,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

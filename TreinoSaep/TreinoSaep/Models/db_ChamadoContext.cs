@@ -24,7 +24,7 @@ namespace TreinoSaep.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=PC03LAB2834\\SENAI; Database=db_Chamado; User Id=sa; Password=senai.123;");
+                optionsBuilder.UseSqlServer("Server=srv-eno.database.windows.net;User Id=admin.eno;Password=erasmo.123;Database=db_Chamado");
             }
         }
 

@@ -115,7 +115,7 @@ namespace TreinoSaep.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index", "Gerenciamento");
             }
             ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Idusu", "Email", chamado.UsuarioId);
             return View(chamado);
